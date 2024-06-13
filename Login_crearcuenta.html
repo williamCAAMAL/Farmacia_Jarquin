@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Sesion</title>
+    <link rel="stylesheet" href="css/Login_css_estilos_g.css"> <!-- Estilos CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>crear cuenta</h1>
+        <form name="frmaltacliente" method="get" action="agregar_usr.php" onsubmit="return validarFor()">
+            <label for="usuario">Correo:</label>
+            <input type="text" name="usuario" id="usuario" />
+            <br/>
+            <label for="text">Contraseña:</label>
+            <input type="text" name="clave" id="clave" />
+            <br/>
+            <input type="submit" value="Iniciar Sesion">
+        </form>
+    </div>
+
+    <script>
+        function validarFor() {
+            var correo = document.getElementById('usuario').value;
+            var contraseña = document.getElementById('text').value;
+            
+            if (correo === "" || contraseña === "") {
+                alert("Por favor, complete todos los campos.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

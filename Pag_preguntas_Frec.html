@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de productos</title>
+    <link rel="stylesheet" href="css/css_pg_inicio.css">
+</head>
+<body>
+    <div>
+        <script>
+        function mostrar() {//Funcion para el menu vertical
+            document.getElementById("sidebar").style.width = "300px";
+            document.getElementById("contenido").style.marginLeft = "300px";
+            document.getElementById("abrir").style.display = "none";
+            document.getElementById("cerrar").style.display = "inline";
+        }
+        
+        function ocultar() {//funcion para ocultar el menu vertical
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("contenido").style.marginLeft = "0";
+            document.getElementById("abrir").style.display = "inline";
+            document.getElementById("cerrar").style.display = "none";
+        }
+        </script>
+
+        </body>
+        </html>
+        
+<nav>
+    <ul>
+        <div id="sidebar" class="sidebar"><!--Lista del menu Vertical-->
+            <a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+            <ul class="menu">
+                <li><a href="Login_sesion.html">Inicio de secion</a></li>
+
+            </ul>
+            </div>
+
+            
+            <div id="contenido"><!--?????--><!--Lista para el menu horisontal -->
+            <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+              </svg></a><a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+              </svg></a>
+              <!--Lista para el menu horisontal -->
+              <li><a href="index.html">Catalogo</a></li>
+              <li><a href="agregar.html">Comentarios</a></li>
+              <li><a href="Pag_preguntas_Frec.html">Preguntas Frecuentes</a></li>
+              <li><a href="Pag_Datos_Establecimiento.html">Datos del local</a></li>
+
+        
+    </ul>
+</div>
+<style>
+            /* Estilos para preguntas frecuentes */
+            .faq {
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+        .faq h2 {
+            text-align: center;
+            color: #333;
+        }
+        .faq ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .faq ul li {
+            background-color: #eee;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .faq ul li:hover {
+            background-color: #ddd;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-left: 3px solid #5cb85c;
+        }
+    </style>
+
+
+
+
+
+
+
+    <section class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <ul>
+            <li onclick="toggleAnswer(1)">¿Qué debo saber sobre el medicamento que me recetaron?</li>
+            <div id="answer1" class="faq-answer">
+                Es importante que comprenda toda la información sobre el medicamento que está tomando. Esto incluye:
+                <ul>
+                    <li><b>Nombre del medicamento:</b> Asegúrese de saber el nombre genérico y de marca del medicamento.</li>
+                    <li><b>Uso del medicamento:</b> ¿Para qué se usa el medicamento? ¿Qué condiciones trata?</li>
+                    <li><b>Cómo tomar el medicamento:</b> ¿Con qué frecuencia debe tomar el medicamento? ¿En qué dosis? ¿Debe tomarlo con o sin alimentos? ¿Cómo debe tomarlo (por ejemplo, por vía oral, por vía intravenosa)?</li>
+                    <li><b>Posibles efectos secundarios:</b> ¿Cuáles son los posibles efectos secundarios del medicamento? ¿Qué debe hacer si experimenta algún efecto secundario?</li>
+                    <li><b>Interacciones medicamentosas:</b> ¿Hay algún medicamento o suplemento que no deba tomar con este medicamento?</li>
+                    <li><b>Precauciones:</b> ¿Hay alguna condición médica o situación que deba tener en cuenta al tomar este medicamento?</li>
+                    <li><b>Almacenamiento:</b> ¿Cómo debe almacenar el medicamento?</li>
+                </ul>
+            </div>
+            <li onclick="toggleAnswer(2)">¿Cómo puedo saber si un medicamento es seguro?</li>
+            <div id="answer2" class="faq-answer">
+                La Administración de Alimentos y Medicamentos (FDA) de los Estados Unidos es responsable de garantizar la seguridad y eficacia de los medicamentos en los Estados Unidos. Puede verificar el estado de aprobación de un medicamento en el sitio web de la FDA: <a href="https://www.fda.gov/">https://www.fda.gov/</a>
+                <br><br>
+                También puede encontrar información sobre la seguridad de los medicamentos en los siguientes sitios web:
+                <ul>
+                    <li><a href="https://medlineplus.gov/">MedlinePlus</a></li>
+                    <li><a href="https://www.nlm.nih.gov/">Biblioteca Nacional de Medicina de los Estados Unidos</a></li>
+                </ul>
+            </div>
+            <li onclick="toggleAnswer(3)">¿Cómo puedo informar un efecto secundario de un medicamento?</li>
+            <div id="answer3" class="faq-answer">
+                Si experimenta un efecto secundario de un medicamento, puede informarlo a la FDA a través del programa <i>MedWatch</i>. Puede informar un efecto secundario en línea, por teléfono o por correo postal. <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program/reporting-serious-problems-fda">https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program/reporting-serious-problems-fda</a>
+            </div>
+            <li onclick="toggleAnswer(4)">¿Dónde puedo encontrar más información sobre medicamentos?</li>
+            <div id="answer4" class="faq-answer">
+                Puede encontrar más información sobre medicamentos en los siguientes sitios web:
+                <ul>
+                    <li><a href="https://medlineplus.gov/">MedlinePlus</a></li>
+                    <li><a href="https://www.nlm.nih.gov/">Biblioteca Nacional de Medicina de los Estados Unidos</a></li>
+                    <li><a href="https://www.nimh.nih.gov/">Instituto Nacional de Salud Mental</a></li>
+                    <li><a href="https://www.cdc.gov/">Centros para el Control y la Prevención de Enfermedades</a></li>
+                </ul>
+            </div>
+            <li onclick="toggleAnswer(5)">¿Puedo obtener ayuda para pagar mis medicamentos?</li>
+            <div id="answer5" class="faq-answer">
+                Si tiene dificultades para pagar sus medicamentos, hay algunos programas que pueden ayudarlo. Puede encontrar más información sobre estos programas en los siguientes sitios web:
+                <ul>
+                    <li><a href="https://www.needymeds.org/">Programa de asistencia para medicamentos de Patient Access</a></li>
+                    <li><a href="https://www.rxassist.org/patients">RxAssist</a></li>
+                    <li><a href="https://phrma.org/">El Fondo de Ayuda para Medicamentos de la Industria Farmacéutica</a></li>
+                </ul>
+                Es importante que hable con su médico o farmacéutico sobre cualquier pregunta que tenga sobre sus medicamentos. No tome ningún medicamento que no le haya recetado su médico. Siga cuidadosamente las instrucciones de su médico sobre cómo tomar el medicamento. Informe a su médico sobre cualquier otro medicamento o suplemento que esté tomando, ya que podrían interactuar con su medicamento recetado.
+            </div>
+            <li onclick="toggleAnswer(6)">¿Qué puedo hacer si mi ticket de compra tiene información errónea?</li>
+            <div id="answer6" class="faq-answer">
+                <ul>
+                    <li><b>Comuníquese con la farmacia:</b> Lo primero que debe hacer es comunicarse con la farmacia donde compró el medicamento. Explique el error en el ticket y solicite que lo corrijan. La farmacia puede hacer un nuevo ticket o anotar la corrección en el original.</li>
+                    <li><b>Conserve el ticket original:</b> Es importante conservar el ticket original, incluso si está corregido. Este será su comprobante de compra en caso de que tenga algún otro problema con el medicamento.</li>
+                </ul>
+            </div>
+            <li onclick="toggleAnswer(7)">¿En caso de necesitar un reembolso, como lo puedo tramitar?</li>
+            <div id="answer7" class="faq-answer">
+                <ul>
+                    <li><b>Política de devoluciones de la farmacia:</b> La política de devoluciones de la farmacia puede variar. Consulte con la farmacia para conocer su política específica. En general, las farmacias aceptan devoluciones de medicamentos sin receta si se encuentran en su empaque original y sin abrir. Algunas farmacias también pueden aceptar devoluciones de medicamentos con receta, pero es posible que se requiera una autorización previa del médico.</li>
+                    <li><b>Requisitos para el reembolso:</b> Para obtener un reembolso, es posible que deba presentar el ticket de compra original, el medicamento sin abrir y cualquier otra documentación requerida por la farmacia.</li>
+                    <li><b>Reembolso del seguro:</b> Si tiene un seguro médico, es posible que pueda obtener un reembolso por el costo del medicamento. Comuníquese con su compañía de seguro para conocer su política de reembolso de medicamentos.</li>
+                </ul>
+            </div>
+            <li onclick="toggleAnswer(8)">¿Puedo cambiar mi medicamento después de pagarlo?</li>
+            <div id="answer8" class="faq-answer">
+                <ul>
+                    <li><b>Política de cambios de la farmacia:</b> La política de cambios de la farmacia puede variar. Consulte con la farmacia para conocer su política específica. En general, las farmacias permiten cambios de medicamentos sin receta si se encuentran en su empaque original y sin abrir. Algunas farmacias también pueden permitir cambios de medicamentos con receta, pero es posible que se requiera una autorización previa del médico.</li>
+                    <li><b>Requisitos para el cambio:</b> Para cambiar un medicamento, es posible que deba presentar el ticket de compra original, el medicamento sin abrir y cualquier otra documentación requerida por la farmacia.</li>
+                </ul>
+            </div>
+            <li onclick="toggleAnswer(9)">¿En caso de que el empaque de mi producto esté abierto, como puedo reclamar?</li>
+            <div id="answer9" class="faq-answer">
+                <ul>
+                    <li><b>Política de reclamos de la farmacia:</b> La política de reclamos de la farmacia puede variar. Consulte con la farmacia para conocer su política específica. En general, las farmacias no aceptan reclamos por medicamentos con el empaque abierto.</li>
+                    <li><b>Excepciones:</b> Puede haber excepciones a esta política, como si el medicamento estuviera dañado o si lo hubiera comprado por error.</li>
+                    <li><b>Requisitos para el reclamo:</b> Para presentar un reclamo, es posible que deba presentar el ticket de compra original, el medicamento sin abrir y cualquier otra documentación requerida por la farmacia.</li>
+                </ul>
+            </div>
+        </ul>
+    </section>
+</main>
+<footer>
+    <!-- Contenido del pie de página -->
+</footer>
+<script>
+    function toggleAnswer(num) {
+        var answer = document.getElementById('answer' + num);
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    }
+</script>
+
+
+</body>
+</html>

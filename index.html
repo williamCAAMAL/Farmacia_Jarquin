@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de productos</title>
+    <link rel="stylesheet" href="css/css_pg_inicio.css">
+    <link rel="stylesheet" href="css/css_pg_prinsipal.css">
+
+</head>
+<div>
+<body>
+    <div>
+        <script>
+        function mostrar() {//Funcion para el menu vertical
+            document.getElementById("sidebar").style.width = "300px";
+            document.getElementById("contenido").style.marginLeft = "300px";
+            document.getElementById("abrir").style.display = "none";
+            document.getElementById("cerrar").style.display = "inline";
+        }
+        
+        function ocultar() {//funcion para ocultar el menu vertical
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("contenido").style.marginLeft = "0";
+            document.getElementById("abrir").style.display = "inline";
+            document.getElementById("cerrar").style.display = "none";
+        }
+        </script>
+
+        </body>
+      
+        
+<nav>
+    <ul>
+        <div id="sidebar" class="sidebar"><!--Lista del menu Vertical-->
+            <a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+            <ul class="menu">
+                <li><a href="Login_sesion.html">Inicio de secion</a></li>
+
+            </ul>
+            </div>
+
+            
+            <div id="contenido"><!--?????--><!--Lista para el menu horisontal -->
+            <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+              </svg></a><a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+              </svg></a>
+              <!--Lista para el menu horisontal -->
+              <li><a href="index.html">Catalogo</a></li>
+              <li><a href="agregar.html">Comentarios</a></li>
+              <li><a href="Pag_preguntas_Frec.html">Preguntas Frecuentes</a></li>
+              <li><a href="Pag_Datos_Establecimiento.html">Datos del local</a></li>
+
+        
+
+            </ul>
+</nav>
+</div>
+
+<section id="section-carta" class="section-carta">
+
+    <div ><!--Fila 1-->
+    
+    <div class="container"><!--Primer div-->
+    
+    
+                <!--Inicio de la carta-->
+                 <div class="card"> 
+                    <div class="box box1">
+                        <div class="content">
+                            <img src="img-medicamentos/Analgesico_Arthril copia.png" alt="macbook">
+                            <!--Caja de img 1-->
+                            <h3>ARTHRIL</h3>
+                        </div><!--contenido 1-->
+                    </div><!--Caja 2-->
+                      <div class="box box2">
+                        <div class="content">
+                            <div class="icon"><!--inicio iconos-->
+                                <i class="bx bxs-star"></i> <!--Estrellas-->
+                                <i class="bx bxs-star"></i> 
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div><!--fin iconos-->
+                            <p>
+                                1.  Forma farmacéutica:<br>
+                                •	Cápsulas<br>
+                                2. Gramaje:<br>
+                                •	100 mg<br>
+                                •	Cajas de 15 y 30 cápsulas<br>
+                                3. Precio público:<br>
+                                •	$40.33<br>
+                                  
+
+
+                            </p> 
+                            <a href="#"></a><!--Link de la pagina-->
+                        </div><!--Contenido-->
+                    </div><!--Caja 2-->
+                </div> 
+                <!--Fin de la carta-->
+    
+                
+                <!--Inicio de la carta-->
+                <div class="card"> 
+                    <div class="box box1">
+                        <div class="content">
+                            <img src="img-medicamentos/Analgesico_FINLAC.png" alt="macbook">
+                            <!--Caja de img 1-->
+                            <h3>FINLAC</h3>
+                        </div><!--contenido 1-->
+                    </div><!--Caja 2-->
+                      <div class="box box2">
+                        <div class="content">
+                            <div class="icon"><!--inicio iconos-->
+                                <i class="bx bxs-star"></i> <!--Estrellas-->
+                                <i class="bx bxs-star"></i> 
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div><!--fin iconos-->
+                            <p>
+                                1.  Forma farmacéutica:<br>
+                                •	Solución inyectable<br>
+                                2. Gramaje:<br>
+                                •	Ampolletas de 1 ml con 30 mg <br>
+                                •	Caja con 3 ampolletas<br>
+                                3. Precio público:<br>
+                                •	$40.33<br>
+                            
+                            </p> 
+                            <a href="#"></a><!--Link de la pagina-->
+                        </div><!--Contenido-->
+                    </div><!--Caja 2-->
+                </div> 
+                <!--Fin de la carta-->
+    
+                
+                <!--Inicio de la carta-->
+                <div class="card"> 
+                    <div class="box box1">
+                        <div class="content">
+                            <img src="img-medicamentos/Analgesico_SONS PIRAL.png" alt="macbook">
+                            <!--Caja de img 1-->
+                            <h3>SON´S PIRAL</h3>
+                        </div><!--contenido 1-->
+                    </div><!--Caja 2-->
+                      <div class="box box2">
+                        <div class="content">
+                            <div class="icon"><!--inicio iconos-->
+                                <i class="bx bxs-star"></i> <!--Estrellas-->
+                                <i class="bx bxs-star"></i> 
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div><!--fin iconos-->
+                            <p>
+                                1.  Forma farmacéutica:<br>
+                                •	Jarabe<br>
+                                2. Gramaje:<br>
+                                •	160 MG./5 ML.<br>
+                                3. Precio público:<br>
+                                •	26.34<br>   
+
+                            </p> 
+                            <a href="#"></a><!--Link de la pagina-->
+                        </div><!--Contenido-->
+                    </div><!--Caja 2-->
+                </div> 
+                <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    
+    </div>
+    
+    
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Anestésico_ZISUAL-C copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>ZISUAL-C</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	pomada <br>
+                            2. Gramaje:<br>
+                            •	100 mg<br>
+                            •	Bote de pomada<br>
+                            3. Precio público:<br>
+                            •	$108.00<br>
+
+
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antibacteriano_LAUR INFANTIL.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>LAUR INFANTIL</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	250 MG/200MG/1<br>
+                            3. Precio público:<br>
+                            •	$56.2<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+             <!--aqui se empiesa-->
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibioico_PORAL OTICO.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>PORAL OPTICO</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1. Forma farmacéutica:<br>
+                            •   Solución ótica<br>
+                            2. Gramaje:<br>
+                            •	100 ml<br>
+                            •	Frasco de 10 ml con gotero<br>
+                            3. Precio público:<br>
+                            •	$35.15.<br>
+                        
+                        
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antibiotico_ACARBIXIN LQS copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>ACARBIXIN LQS</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	875 MG./125 MG.<br>
+                            3. Precio público:<br>
+                            •	$46.75<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibiotico_Acroxil-c cap copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>ACROXIL-C</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                                •	Cápsulas<br>
+                                2. Gramaje:<br>
+                                •	500 MG./8 MG.<br>
+                                •	Caja de 12 capsulas<br>
+                                3. Precio público:<br>
+                                •	$ 24.20<br>  
+                        
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibiotico_acroxil-c susp copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>ACROXIL-C SUSP</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	suspencion<br>
+                            2. Gramaje:<br>
+                            •	250 MG.<br>
+                            3. Precio público:<br>
+                            •	$25.2<br> 
+                        
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antibiotico_CI-SON´S.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>CI-SON´S</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	500 MG.<br>
+                            3. Precio público:<br>
+                            •	$34.53<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibiotico_LISONIN Iny.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>LISONIN INY</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	500 MG.<br>
+                            3. Precio público:<br>
+                            •	$57.2<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibiótico_LISONIN Cap.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>LISONIN CAPSULA</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	500 MG.<br>
+                            3. Precio público:<br>
+                            •	$57.2<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibiótico_Metroson.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>METROSON</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Cmprimidos<br>
+                            2. Gramaje:<br>
+                            •	250 MG./5 ML..<br>
+                            3. Precio público:<br>
+                            •	$22.30<br>
+                        
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibiótico_PHENDEX.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>PHENDEX</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            
+                            1.  Forma farmacéutica:<br>
+                            •	Gotas ótica<br>
+                            2. Gramaje:<br>
+                            •	2 MG./10 MG./50 MG./1 ML.<br>
+                            3. Precio público:<br>
+                            •	$32.85<br>
+                            
+                            .</p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibiótico_RASPISONS.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>RASPISONS</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Ungüento<br>
+                            2. Gramaje:<br>
+                            •	Tubo de 28 gramos<br>
+                            3. Precio público:<br>
+                            •	$18.78<br>  
+                        
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antibióticos_Mornin.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>MORNIN</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	40 MG..<br>
+                            3. Precio público:<br>
+                            •	$19.15<br>    
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Anticoncepción_DIVILTAC copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>DIVILTAC </h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	500 MG.<br>
+                            3. Precio público:<br>
+                            •	$57.2<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antigripal_AMPAMIL Cap copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>AMPAMIL CAP </h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	500 MG.<br>
+                            3. Precio público:<br>
+                            •	$57.2<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antigripal_AMPAMIL Jbe.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>AMPAMIL JBE.</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Jarabe<br>
+                            2. Gramaje:<br>
+                            •	300 MG./1 ML. <br>
+                            3. Precio público:<br>
+                            •	$40.33<br>
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antiinflamatorio_ARDOSONS.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>ARDOSONS</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            
+                            1.  Forma farmacéutica:<br>
+                            •	Capsula <br>
+                            2. Gramaje:<br>
+                            •	25 MG./0.75 MG./215 MG<br>
+                            3. Precio público:<br>
+                            •	$54.71<br>
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antiinflamatorio_DISON´S DEX copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>DISON´S DEX</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Inyectable <br>
+                            2. Gramaje:<br>
+                            •	5 MG./2 MG./1 ML.<br>
+                            3. Precio público:<br>
+                            •	$35.28<br>
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antiinflamatorio_MYCINADOL copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>MYCINADOL</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	250 MG./5 ML..<br>
+                            3. Precio público:<br>
+                            •	$22.30<br>  
+                             
+                             </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antiinflamatorio_Tukson.jpeg" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>TUKSON</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Jarabe<br>
+                            2. Gramaje:<br>
+                            •	50 MG./5 ML.<br>
+                            3. Precio público:<br>
+                            •	$24.19<br>  
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antiinflamatorio_VELSAY-S COMPUESTO copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>VELSAY-S COMPUESTO </h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Suspensión oral<br>
+                            2. Gramaje:<br>
+                            •	125 MG./100 MG./5 ML.<br>
+                            3. Precio público:<br>
+                            •	$25.58.<br>  
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antimicótico_CLOTRIMAZOL DUAL copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>CLOTRIMAZOL DUAL </h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	OVULOS Y CMA. <br>
+                            2. Gramaje:<br>
+                            •	C/3 Y C/10 G.<br>
+                            3. Precio público:<br>
+                            •	$53.68<br>
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antitusivo_BROMINOL-C ADULTO copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>BROMINOL-C ADULTO </h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Jarabe <br>
+                            2. Gramaje:<br>
+                            •	11.25 MG./11.25<br>
+                            3. Precio público:<br>
+                            •	$23.94<br>
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Antitusivo_BROMINOL-C INFANTIL copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>BROMINOL-C INFANTIL</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Jarabe <br>
+                            2. Gramaje:<br>
+                            •	7.5 MG./5.65 MG./5 ML.<br>
+                            3. Precio público:<br>
+                            •	$23.94<br>
+                        </p>                         <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antitusivo_Ridin infantil.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>RIDIN INFANTIL</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Jarabe<br>
+                            2. Gramaje:<br>
+                            •	5 MG./0.5 MG./50 MG./5 ML.<br>
+                            3. Precio público:<br>
+                            •	$22.30<br>  
+                           </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/antitusivos_Ridin Adulto copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>RIDIN ADULTO</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Jarabe<br>
+                            2. Gramaje:<br>
+                            •	7.5 MG./1 MG./100 MG./5 ML.<br>
+                            3. Precio público:<br>
+                            •	$33.15.<br>  
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Bactericida_Expicin copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>EXPICIN</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Cápsulas<br>
+                            2. Gramaje:<br>
+                            •	Cápsulas: 500 mg <br>
+                            3. Precio público:<br>
+                            •	$29.24 MXN.<br>     
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Bactericida_GENKOVA.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>GENKOVA</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Inyectable <br>
+                            2. Gramaje:<br>
+                            •	20 MG./2 ML<br>
+                            3. Precio público:<br>
+                            •	$14.37<br>
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/bisfosfonato_MISODRON.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>MISODRON</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Tabletas<br>
+                            2. Gramaje:<br>
+                            •	35 mg<br>
+                            3. Precio público:<br>
+                            •	$278.00<br>    
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/Brominol c.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>BROMINOL C</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Jarabe <br>
+                            2. Gramaje:<br>
+                            •	7.5 MG./5.65 MG./5 ML.<br>
+                            3. Precio público:<br>
+                            •	$22.3<br>
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div><!--Fila 2-->
+    
+        <div class="container"><!--Primer div-->
+    
+    
+            <!--Inicio de la carta-->
+             <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/descongestivo_NEODEFRIN.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>NEODEFRIN</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Spray nasal<br>
+                            2. Gramaje:<br>
+                            •	0.050 G./0.350 G./0.500 G./100<br>
+                            3. Precio público:<br>
+                            •	$31.88<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/herbolario_wilvit.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>WILVIT</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Cápsulas<br>
+                            2. Gramaje:<br>
+                            •	2g<br>
+                            3. Precio público:<br>
+                            •	$198.00<br>   
+                        </p> 
+                        <a href="#"></a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+            
+            <!--Inicio de la carta-->
+            <div class="card"> 
+                <div class="box box1">
+                    <div class="content">
+                        <img src="img-medicamentos/simpaticomiméticos_FENIXIL-OF copia.png" alt="macbook">
+                        <!--Caja de img 1-->
+                        <h3>FENIXIL-OF</h3>
+                    </div><!--contenido 1-->
+                </div><!--Caja 2-->
+                  <div class="box box2">
+                    <div class="content">
+                        <div class="icon"><!--inicio iconos-->
+                            <i class="bx bxs-star"></i> <!--Estrellas-->
+                            <i class="bx bxs-star"></i> 
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                        </div><!--fin iconos-->
+                        <p>
+                            1.  Forma farmacéutica:<br>
+                            •	Frasco gotero<br>
+                            2. Gramaje:<br>
+                            •	15 mL<br>
+                            3. Precio público:<br>
+                            •	$37.00<br>   
+                        </p> 
+                        <a href="#">Comprar</a><!--Link de la pagina-->
+                    </div><!--Contenido-->
+                </div><!--Caja 2-->
+            </div> 
+            <!--Fin de la carta-->
+    
+    
+    </div><!--Fin del 1er div-->
+    <!--filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    
+    
+     </section>
+    
+
+
+</body>
+</html>
